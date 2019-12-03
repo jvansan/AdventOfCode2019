@@ -45,7 +45,7 @@ def find_output(inputs, nlim=100, vlim=100, desired=19690720):
             seen.add((n,v))
         fixed = fix_program(inputs, n, v)
         output = run_program(fixed)
-        if output == 19690720:
+        if output == desired:
             return (n,v)
 
 def run_program(inputs):
